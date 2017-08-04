@@ -1,0 +1,8 @@
+image: "hero.jpg"
+title: "Workshop on Cloud Services for <br> Synchronisation and Sharing"
+eventDate: "29 - 31 January 2018"
+typeoutTextValues: '"", "Season", "Krakow", "", "Poland"'
+typeoutFallback: "Season"
+buttons:
+ - {link: "https://goo.gl/forms/VuLbeMXEaVZcXYff1", text: "Register"}
+ 

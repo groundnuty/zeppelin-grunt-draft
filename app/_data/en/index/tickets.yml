@@ -1,0 +1,48 @@
+title: "Conference Fee"
+info: "Registration grants access to all conference sections, coffee breaks, lunch and an evening reception. Accommodation is NOT included in the ticket price."
+offers:
+ -
+  name: "Early Bird"
+  price: "130"
+  priceCurrency: "EUR"
+  ticketsNumber: ""
+  ribbon: ""
+  buyButtonLink: "https://goo.gl/forms/VuLbeMXEaVZcXYff1"
+  buyButtonText: "Buy Now"
+  ticketContentList: ["Lorem ipsum is simply", "Dummy text of the printing", "Typesetting industry"]
+  validFrom: "2014-08-25T10:00"
+  validThrough: "2018-09-30T23:59"
+  additionalInfo: "Before 31 December 2017"
+  info: ""
+  disabled: true
+  fallback: "Registration will open will begin on 1 September 2017"
+ -
+  name: "Regular"
+  price: "150"
+  priceCurrency: "EUR"
+  ticketsNumber: ""
+  ribbon: ""
+  featured: true
+  buyButtonLink: "https://goo.gl/forms/VuLbeMXEaVZcXYff1"
+  buyButtonText: "Buy Now"
+  ticketContentList: ["Lorem ipsum is simply", "Dummy text of the printing", "Typesetting industry"]
+  validFrom: "2014-10-01T00:00"
+  validThrough: "2014-10-23T23:59"
+  additionalInfo: "After 31 December 2017"
+  info: ""
+  disabled: true
+  fallback: ""
+ -
+  name: "On Site"
+  price: "200"
+  priceCurrency: "EUR"
+  ticketsNumber: "50"
+  buyButtonLink: "http://dfua.ticketforevent.com/"
+  buyButtonText: "Buy Now"
+  additionalInfo: "Payed by cash or credit card during the conference"
+  ticketContentList: ["Lorem ipsum is simply", "Dummy text of the printing", "Typesetting industry"]
+  validFrom: ""
+  validThrough: ""
+  info: ""
+  soldOut: true
+  soldOutText: "" # A trick to leave it empty, as the ticket is bought on site

@@ -1,0 +1,21 @@
+links:
+ - {permalink: "/", text: "Home"}
+ - {permalink: "/blog/", text: "Blog"}
+ - {permalink: "/blog/what-is-the-worhskop-about", text: "About this workshop"}
+ - {permalink: "/blog/call-for-abstracts", text: "Call for Abstracts"}
+
+#  - {permalink: "/schedule/", text: "Schedule"}
+#  - {permalink: "/speakers/", text: "Speakers"}
+#  - {permalink: "/team/", text: "Team"}
+#  - {permalink: "/logistics/", text: "Logistics"}
+#  - {permalink: "/hackathon/", text: "Hackathon"}
+ - 
+   subText: "Previous Workshops"
+   links:
+    - {link: "https://cs3.surfsara.nl/", text: "Amsterdam 2017"}
+    - {link: "https://cs3.ethz.ch/", text: "Zurich 2016"}
+    - {link: "https://indico.cern.ch/event/336753/", text: "Geneva 2014"}
+bottomLinks:
+ - {link: "https://goo.gl/forms/VuLbeMXEaVZcXYff1", text: "Register"}
+rightButtons:
+ - {link: "https://goo.gl/forms/VuLbeMXEaVZcXYff1", text: "Register"}

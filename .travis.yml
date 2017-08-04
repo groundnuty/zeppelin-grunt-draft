@@ -1,0 +1,34 @@
+sudo: false
+language: node_js
+node_js:
+- '8'
+before_install:
+- rvm use 2.4.0 --install --fuzzy
+install:
+- travis_retry bundle install
+- travis_retry gem install jekyll
+- bundle exec jekyll -v
+- travis_retry gem install colorator -v 0.1
+- travis_retry npm install -g grunt-cli bower
+- travis_retry npm install
+script:
+- grunt build:dist --force
+- ls -lR dist/
+deploy:
+- provider: pages
+  skip_cleanup: true
+  #local_dir: dist/zeppelin-grunt
+  github_token: "$GITHUB_TOKEN"
+  on:
+    branch: master
+    tags: true
+- provider: pages
+  repo: "${TRAVIS_REPO_SLUG}-draft"
+  #local_dir: dist/zeppelin-grunt
+  skip_cleanup: true
+  github_token: "$GITHUB_TOKEN"
+  on:
+    branch: master
+env:
+  global:
+    secure: fv4jDZ+g/i23hFJvmXAbnkPXsTN62IlOiqXnYyWzbiSanmvRwtqpH3I54IcPWzgrhjzwbbsNeraeibqZcx5VwDOTbL7ViKeVvbdVLzuEkbSN9H83mF/ypTdSqgOkhyc18aihQzOh544qc90atw/Y1csRO3Nx3hx65sFK/zJbwrDmzlzE6pddjCCNuO8dKiwOs9kciFH01UzWqMrYWgob3dJBY6zgenLTj6CdSODV96noo6o2UwLXGhvL2BxflzxUSMbFMHUlsSk+wAg0qXJE0uUNOd8Fm4JV/z+O/6puuLzas4bNAQbswAjQO5JwZBjHJd5og2g+fQ2oRzAFT74bUidSiTYjVpR14/We9T4Bv9YEmiF3IQ4WRwGTyn02JPfGnOrMbjJmQ5DP3pGwaWMBDz/CxCi5+rvUybu9VSIbjIBMqVZKNnXHvKIumNNvVEyh70Xcq6lgAEWY0ZCkZPGD3CU/rwRpr6pOF/HNGYzkWcXA4RQBUVres7AtH09cgzMwIVSq7dQX0u/NDsFLMhdupn/3gdWrNGFpEK1BEDOCHiTN6wQCzxky/gJMDF541WHudqF992fHXze1BRisjt+g/uAO3ejhbtXU4WswHzrFRxEuhsciFFdFJ/0Y9eRmEm/voW1vWTBzEha/Lkue9ZgMZ3bkwEF6Mg977y/1yN0yY7w=

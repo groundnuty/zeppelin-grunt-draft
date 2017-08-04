@@ -1,0 +1,7 @@
+- 
+  elements: 
+    - {name: "ETH", description: "ETH", link: "https://www.ethz.ch", imageUrl: "eth.png"}
+    - {name: "Cyfronet", description: "Cyfronet", link: "https://www.cyfronet.krakow.pl", imageUrl: "cyfronet.jpg"}
+    - {name: "CERN", description: "CERN", link: "https://cern.ch", imageUrl: "cern.jpg"}
+    - {name: "SURFsara", description: "SURFsara", link: "https://www.surf.nl", imageUrl: "surfsara.png"}
+    - {name: "AARNet", description: "AARNet", link: "https://www.surf.nl", imageUrl: "aarnet.png"}

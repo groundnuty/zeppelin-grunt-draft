@@ -1,0 +1,23 @@
+# Plugins
+gems:
+- jekyll-sitemap
+
+# Grunt handles images and assets.
+exclude: ['img', 'css', 'js', 'fonts',
+          '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
+
+# _config.build.yml sets future and show_drafts to false on `grunt build`
+future: true
+show_drafts: true
+
+# Markdown library
+markdown: kramdown
+
+# Site settings
+baseurl: "http://cs3.cyfronet.pl"
+url: "http://cs3.cyfronet.pl"
+permalink: '/blog/:title'
+
+# i18n
+languages: ["en"]
+exclude_from_localizations: ["js", "img", "css"]
